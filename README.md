@@ -1,13 +1,13 @@
-# SBA301 Lab 05 — Orchid Management
+# Orchid_Mgnt_V5
 
 Ứng dụng React/Vite ↔ Axios ↔ Spring Boot 3 ↔ Spring Data JPA ↔ SQL Server.
 Backend và frontend là hai project độc lập, theo cấu trúc và mẫu code trong PDF Lab 05.
 
 ## Đối chiếu với tài liệu
 
-- Giữ `chapter15api`, package `fu.se.chapter15api`, `IOrchidRepository`, `IOrchidService`, `OrchidService`, `OrchidController` và `CorsConfig` theo PDF.
+- Tên dự án là `Orchid_Mgnt_V5`; package npm dùng `orchid_mgnt_v5`. Giữ thư mục `chapter15api`, package `fu.se.chapter15api`, `IOrchidRepository`, `IOrchidService`, `OrchidService`, `OrchidController` và `CorsConfig` theo PDF.
 - Giữ React **JavaScript/JSX**, Bootstrap, Axios client, `NavBar`, `ListOfOrchids`, `EditOrchid`, các route và luồng CRUD theo PDF.
-- Dùng **OrchidManagementDB**, `spring.application.name=orchid-api` và toàn bộ cấu hình datasource do người dùng cung cấp, thay cho tên database minh họa `SBA301_OrchidDB` trong PDF.
+- Dùng **OrchidManagementDB**, `spring.application.name=Orchid_Mgnt_V5` và toàn bộ cấu hình datasource do người dùng cung cấp, thay cho tên database minh họa `SBA301_OrchidDB` trong PDF.
 - Tên cột SQL, validation và chức năng xem chi tiết bằng cách bấm ảnh/tên theo README tham khảo. Chuyển phần mở rộng TypeScript của README sang JSX để giữ baseline frontend của PDF.
 - GET/POST collection nhận cả `/orchids/` (PDF) và `/orchids` (README); Axios giữ `get("/")` và `post("/", payload)` như PDF.
 - Bổ sung trạng thái chờ tải/lưu, khóa form khi chưa tải xong, giới hạn chiều dài input và cleanup effect để tránh lưu nhầm dữ liệu hoặc phản hồi cũ.
@@ -38,7 +38,7 @@ Không có script tự động chạy SQL Server khi cài/chạy project.
 
 Yêu cầu JDK 21 và Maven 3.6.3+. Máy triển khai đã có JDK 21 và Maven.
 
-File `chapter15api/src/main/resources/application.properties` trên máy này giữ **nguyên cấu hình bạn gửi**, kể cả giá trị mặc định local. File này được `.gitignore` loại khỏi Git để không đẩy mật khẩu lên GitHub.
+File `chapter15api/src/main/resources/application.properties` trên máy này dùng tên ứng dụng `Orchid_Mgnt_V5` và giữ cấu hình datasource bạn gửi, kể cả giá trị mặc định local. File này được `.gitignore` loại khỏi Git để không đẩy mật khẩu lên GitHub.
 Repository sử dụng `application.properties.example` không chứa mật khẩu.
 
 **Sau khi clone trên máy khác**, thực hiện trong PowerShell:

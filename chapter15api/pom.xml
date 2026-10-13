@@ -9,10 +9,10 @@
         <relativePath/>
     </parent>
     <groupId>fu.se</groupId>
-    <artifactId>chapter15api</artifactId>
+    <artifactId>Orchid_Mgnt_V5</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>chapter15api</name>
-    <description>SBA301 Lab 05 - Orchid Management REST API</description>
+    <name>Orchid_Mgnt_V5</name>
+    <description>Orchid_Mgnt_V5 - Orchid Management REST API</description>
     <properties>
         <java.version>21</java.version>
     </properties>
